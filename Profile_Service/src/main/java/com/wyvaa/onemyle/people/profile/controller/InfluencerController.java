@@ -38,7 +38,7 @@ public class InfluencerController {
 				  return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		   }
 		
-	} @GetMapping("/influencers/id/query")
+	} @GetMapping("/influencers/userid/query")
 	 public ResponseEntity<?> getInfluencerUserById(@RequestParam("userid") String userid) {
 		   try {
 		   return new ResponseEntity<>(service.getInfluencerUserById(userid),HttpStatus.OK);

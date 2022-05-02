@@ -35,7 +35,7 @@ public class ExpertController {
 			return new ResponseEntity<>(service.getExpertsById(areaExpertId), HttpStatus.OK);
 		
 	}
-	@GetMapping("/experts/id/query")
+	@GetMapping("/experts/userid/query")
 	 public ResponseEntity<?> getInfluencerUserById(@RequestParam("userid") String userid) {
 		   try {
 		   return new ResponseEntity<>(service.getExpertsUserById(userid),HttpStatus.OK);

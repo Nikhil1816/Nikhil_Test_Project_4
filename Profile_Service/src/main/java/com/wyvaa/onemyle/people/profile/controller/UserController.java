@@ -44,7 +44,7 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/users/email/query")
+	@GetMapping("/users/emailid/query")
 	public ResponseEntity<?> getUserByEmail(@RequestParam("emailid") String emailid) {
 		try {
 			return new ResponseEntity<>(service.getUserByEmail(emailid), HttpStatus.OK);

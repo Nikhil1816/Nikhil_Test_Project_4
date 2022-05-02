@@ -11,6 +11,8 @@ public class User {
 	private String name;
 	private String emailid;
 	private boolean deleted;
+	private String mobile;
+	
 	public String getNodeid() {
 		return nodeid;
 	}
